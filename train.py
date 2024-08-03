@@ -46,9 +46,6 @@ def best_parameters():
 CHECK_DIR = './train/'
 call = Callback(check_freq=10000, save_path=CHECK_DIR)
 
-#not currently best solution. takes too long
-#new_param = study.setup.best_params
-
 new_param = best_parameters()
 
 #initialize the environment
