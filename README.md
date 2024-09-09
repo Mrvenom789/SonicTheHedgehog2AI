@@ -11,3 +11,5 @@ test.py creates a new environment based on whatever model is loaded
 check.py creates environment that uses random inputs. Used for testing
 
 sonic.py is used to store information obout the game and environment
+
+Uses Python 3.8, Gym retro version 0.17, stable-baselines3 vesion 1.3.0
