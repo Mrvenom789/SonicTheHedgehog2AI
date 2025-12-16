@@ -23,7 +23,7 @@ env = Monitor(env, LOG_DIR)
 env = DummyVecEnv([lambda: env])
 env = VecFrameStack(env, 4, channels_order='last')
 
-model = PPO.load('./train/best_model_20000.zip')
+model = PPO.load('train/best_performance.zip')
 mean_reward, _ = evaluate_policy(model, env, render=True, n_eval_episodes=1)
 print(mean_reward)
 
